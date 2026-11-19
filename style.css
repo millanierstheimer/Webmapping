@@ -1,0 +1,213 @@
+@font-face { /* Bindet eine eigene Schriftart in die Website ein. */
+    font-family: "Open Sans Condensed"; /* Legt den Namen der Schriftfamilie fest. */
+    src: url("fonts/OpenSans_Condensed-Regular.ttf") format("truetype"); /* Gibt den Speicherort der normalen Schriftdatei an. */
+    font-weight: 400; /* Legt die normale Schriftstärke fest. */
+}
+
+@font-face { /* Bindet eine weitere Schriftstärke derselben Schriftart ein. */
+    font-family: "Open Sans Condensed"; /* Verwendet denselben Namen der Schriftfamilie. */
+    src: url("fonts/OpenSans_Condensed-Bold.ttf") format("truetype"); /* Gibt den Speicherort der fetten Schriftdatei an. */
+    font-weight: 700; /* Legt die fette Schriftstärke fest. */
+}
+
+@font-face { /* Bindet die dünne Variante der Schriftart ein. */
+    font-family: "Open Sans Condensed"; /* Verwendet denselben Namen der Schriftfamilie. */
+    src: url("fonts/OpenSans_SemiCondensed-Light.ttf") format("truetype"); /* Gibt den Speicherort der dünnen Schriftdatei an. */
+    font-weight: 300; /* Legt die dünne Schriftstärke fest. */
+}
+
+body { /* Gestaltet den gesamten sichtbaren Bereich der Website. */
+    font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif; /* Legt die Schriftart fest; falls sie nicht geladen werden kann, werden Ersatzschriften verwendet. */
+    background-color: #c5b7f5; /* Legt die Hintergrundfarbe der Website fest. */
+    color: #303943; /* Legt die allgemeine Textfarbe fest. */
+    margin: 0; /* Entfernt den standardmäßigen Außenabstand des Browsers. */
+    line-height: 1.6; /* Legt den Abstand zwischen den Textzeilen fest. */
+}
+
+h1 { /* Gestaltet alle Überschriften der ersten Ebene. */
+
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    text-align: center; /* Richtet die Überschrift mittig aus. */
+    font-weight: 700; /* Legt die Schriftstärke fest. */
+    font-size: 58px; /* Legt die Schriftgröße fest. */
+    margin-bottom: 0px; /* Entfernt den unteren Außenabstand. */
+    margin-top: 100px; /* Legt den oberen Außenabstand fest. */
+}
+
+h2 { /* Gestaltet alle Überschriften der zweiten Ebene. */
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    margin-top: 30px; /* Legt den oberen Außenabstand fest. */
+    margin-bottom: 9px; /* Legt den unteren Außenabstand fest. */
+    border-bottom: 1px solid #263746; /* Fügt unter der Überschrift eine dünne Linie ein. */
+}
+
+p { /* Gestaltet alle Textabsätze. */
+    line-height: 1.5; /* Legt den Abstand zwischen den Textzeilen fest. */
+    margin-top: 0px; /* Entfernt den oberen Außenabstand. */
+    margin-bottom: 10px; /* Legt den unteren Außenabstand fest. */
+}
+
+header img { /* Gestaltet Bilder innerhalb des Kopfbereichs. */
+    width: 200px; /* Legt die Breite des Bildes fest. */
+    height: auto; /* Passt die Höhe automatisch an, damit die Bildproportionen erhalten bleiben. */
+    position: absolute; /* Positioniert das Bild unabhängig vom normalen Textfluss. */
+    top: 20px; /* Legt den Abstand zum oberen Rand fest. */
+    left: 25px; /* Legt den Abstand zum linken Rand fest. */
+}
+
+.hochschule { /* Gestaltet ein Element mit der Klasse hochschule. */
+    text-align: center; /* Richtet den Text mittig aus. */
+    font-weight: 900; /* Legt eine sehr fette Schriftstärke fest. */
+    font-size: 16px; /* Legt die Schriftgröße fest. */
+    margin-top: -8px; /* Verschiebt den oberen Außenabstand um 8 Pixel nach oben. */
+    margin-bottom: 30px; /* Legt den unteren Außenabstand fest. */
+}
+
+main { /* Gestaltet den Hauptinhalt der Website. */
+    width: 100%; /* Nutzt die gesamte verfügbare Breite. */
+    max-width: 100%; /* Begrenzt die maximale Breite auf 100 Prozent. */
+    padding: 10mm; /* Fügt innen einen Abstand von 10 Millimetern hinzu. */
+    box-sizing: border-box; /* Sorgt dafür, dass Innenabstände bereits in der Gesamtbreite enthalten sind. */
+}
+
+#karte { /* Gestaltet den Bereich, in dem die Leaflet-Karte angezeigt wird. */
+    width: 100%; /* Nutzt die gesamte verfügbare Breite. */
+    max-width: 100%; /* Verhindert, dass die Karte breiter als ihr übergeordneter Bereich wird. */
+    height: 500px; /* Legt die Höhe der Karte auf 500 Pixel fest. */
+    margin-top: 20px; /* Fügt oberhalb der Karte einen Abstand von 20 Pixeln hinzu. */
+}
+
+footer { /* Gestaltet den Fußbereich der Website. */
+    text-align: center; /* Richtet den Inhalt mittig aus. */
+    width: 100%; /* Nutzt die gesamte verfügbare Breite. */
+    margin-top: 40px; /* Fügt oberhalb des Fußbereichs einen Abstand hinzu. */
+}
+
+.titelbereich { /* Gestaltet den großen Kopfbereich mit dem Hintergrundbild. */
+    width: 100%; /* Nutzt die gesamte Bildschirmbreite. */
+    min-height: 650px; /* Legt eine Mindesthöhe von 650 Pixeln fest. */
+    background-image: url("pics/Tempelhofer_feld.jpeg"); /* Legt das Hintergrundbild fest. */
+    background-size: cover; /* Skaliert das Bild so, dass der gesamte Bereich ausgefüllt wird. */
+    background-position: center; /* Zentriert das Hintergrundbild. */
+    background-repeat: no-repeat; /* Verhindert, dass sich das Hintergrundbild wiederholt. */
+
+    display: flex; /* Aktiviert Flexbox für die Anordnung der Inhalte. */
+    align-items: center; /* Richtet den Inhalt senkrecht mittig aus. */
+    padding: 40px; /* Fügt einen Innenabstand von 40 Pixeln hinzu. */
+    box-sizing: border-box; /* Bezieht den Innenabstand in die Gesamtbreite ein. */
+}
+
+.titelbereich h1 { /* Gestaltet die Hauptüberschrift speziell im Kopfbereich. */
+    font-size: 90px; /* Vergrößert die Überschrift auf 90 Pixel. */
+    font-weight: 700; /* Legt eine fette Schriftstärke fest. */
+    line-height: 0.95; /* Verringert den Abstand zwischen den Zeilen. */
+    margin: 0; /* Entfernt alle Außenabstände der Überschrift. */
+    text-transform: uppercase; /* Wandelt alle Buchstaben in Großbuchstaben um. */
+    letter-spacing: -2px; /* Verringert den Abstand zwischen den Buchstaben. */
+    text-align: left; /* Richtet die Überschrift linksbündig aus. */
+}
+
+.lila-titel { /* Gestaltet den ersten Teil der Überschrift. */
+    display: block; /* Sorgt dafür, dass der Text in einem eigenen Block steht. */
+    color: #fdfdfd; /* Legt die Schriftfarbe fest. */
+}
+
+.weisser-titel { /* Gestaltet den zweiten Teil der Überschrift. */
+    display: block; /* Sorgt dafür, dass der Text in einem eigenen Block steht. */
+    color: #c5b7f5; /* Legt die Schriftfarbe fest. */
+}
+
+.impressum-link { /* Gestaltet ein Element mit der Klasse impressum-link. */
+    text-align: center; /* Richtet den Inhalt mittig aus. */
+}
+
+/* Gestaltung des Karten-Popups */
+
+.popup-inhalt { /* Gestaltet den gesamten Inhalt des Popups auf der Karte. */
+    padding: 8px; /* Fügt innen einen Abstand von 8 Pixeln hinzu. */
+    font-family: "Open Sans Condensed", Arial, sans-serif; /* Legt die Schriftart des Popups fest. */
+    color: #303943; /* Legt die Textfarbe fest. */
+}
+
+.popup-label { /* Gestaltet die kleine Beschriftung im Popup. */
+    color: #8c78c9; /* Legt die Schriftfarbe fest. */
+    font-size: 13px; /* Legt die Schriftgröße fest. */
+    font-weight: 700; /* Stellt die Schrift fett dar. */
+    letter-spacing: 2px; /* Vergrößert den Abstand zwischen den Buchstaben. */
+    margin: 0 0 3px 0; /* Entfernt die oberen, linken und rechten Außenabstände und lässt unten 3 Pixel Abstand. */
+}
+
+.popup-inhalt h2 { /* Gestaltet die Überschrift innerhalb des Popups. */
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    font-size: 25px; /* Legt die Schriftgröße fest. */
+    line-height: 1.1; /* Legt den Zeilenabstand fest. */
+    margin: 0 0 12px 0; /* Entfernt die oberen, linken und rechten Außenabstände und lässt unten 12 Pixel Abstand. */
+    border: none; /* Entfernt die sonst für h2 festgelegte Linie. */
+}
+
+.popup-inhalt p:not(.popup-label) { /* Gestaltet alle Absätze im Popup außer der kleinen Beschriftung. */
+    font-size: 16px; /* Legt die Schriftgröße fest. */
+    line-height: 1.5; /* Legt den Zeilenabstand fest. */
+    margin: 0 0 15px 0; /* Entfernt die oberen, linken und rechten Außenabstände und lässt unten 15 Pixel Abstand. */
+}
+
+.popup-inhalt a { /* Gestaltet den Link innerhalb des Popups. */
+    display: inline-block; /* Ermöglicht die Gestaltung des Links wie ein kleiner eigener Bereich. */
+    color: #8c78c9; /* Legt die Schriftfarbe fest. */
+    font-size: 15px; /* Legt die Schriftgröße fest. */
+    font-weight: 700; /* Stellt die Schrift fett dar. */
+    letter-spacing: 1px; /* Vergrößert den Abstand zwischen den Buchstaben. */
+    text-decoration: none; /* Entfernt die standardmäßige Unterstreichung des Links. */
+    border-bottom: 1px solid #c5b7f5; /* Fügt unter dem Link eine dünne Linie ein. */
+    padding-bottom: 3px; /* Fügt zwischen Text und Linie einen Abstand hinzu. */
+}
+
+.popup-inhalt a:hover { /* Legt fest, wie sich der Link beim Darüberfahren mit der Maus verändert. */
+    color: #263746; /* Ändert die Schriftfarbe beim Darüberfahren mit der Maus. */
+    border-color: #263746; /* Ändert die Farbe der Linie. */
+}
+
+/* Äußere Gestaltung des Leaflet-Popups */
+
+.leaflet-popup-content-wrapper { /* Gestaltet den äußeren Hintergrund des Leaflet-Popups. */
+    background-color: #ffffff; /* Legt die Hintergrundfarbe auf Weiß fest. */
+    border-radius: 12px; /* Rundet die Ecken ab. */
+    box-shadow: 0 8px 30px rgba(38, 55, 70, 0.18); /* Fügt einen dezenten Schatten hinzu. */
+}
+
+.leaflet-popup-content { /* Gestaltet den Inhaltsbereich des Leaflet-Popups. */
+    margin: 16px; /* Fügt außen einen Abstand von 16 Pixeln hinzu. */
+    min-width: 230px; /* Legt eine Mindestbreite von 230 Pixeln fest. */
+}
+
+.leaflet-popup-tip { /* Gestaltet die kleine Spitze des Popups. */
+    background-color: #ffffff; /* Legt die Farbe der Spitze auf Weiß fest. */
+}
+
+.leaflet-popup-close-button { /* Gestaltet das Schließen-Symbol des Popups. */
+    color: #8c78c9 !important; /* Legt die Farbe des Schließen-Symbols fest; important überschreibt andere Leaflet-Farbregeln. */
+    font-size: 20px !important; /* Legt die Größe des Schließen-Symbols fest. */
+}
+footer { /* Gestaltet den Fußbereich der Website. */
+    background-color: #263746; /* Legt die Hintergrundfarbe fest. */
+    display: flex; /* Aktiviert Flexbox für die Anordnung der Links. */
+    justify-content: center; /* Richtet die Links waagerecht mittig aus. */
+    align-items: center; /* Richtet die Links senkrecht mittig aus. */
+    gap: 35px; /* Legt den Abstand zwischen den Links fest. */
+    text-align: center; /* Richtet den Text mittig aus. */
+    width: 100%; /* Nutzt die gesamte verfügbare Breite. */
+    margin-top: 40px; /* Fügt oberhalb des Fußbereichs einen Abstand hinzu. */
+    padding: 30px 20px; /* Fügt innen oben und unten 30 Pixel sowie links und rechts 20 Pixel Abstand hinzu. */
+    box-sizing: border-box; /* Bezieht Innenabstände in die Gesamtbreite ein. */
+}
+footer a { /* Gestaltet die Links im Fußbereich. */
+    color: #c5b7f5; /* Legt die Schriftfarbe fest. */
+    text-decoration: none; /* Entfernt die standardmäßige Unterstreichung. */
+    font-size: 16px; /* Legt die Schriftgröße fest. */
+    font-weight: 700; /* Stellt die Schrift fett dar. */
+    letter-spacing: 2px; /* Vergrößert den Abstand zwischen den Buchstaben. */
+}
+
+footer a:hover { /* Legt fest, wie sich die Links beim Darüberfahren mit der Maus verändern. */
+    color: white; /* Ändert die Schriftfarbe beim Darüberfahren auf Weiß. */
+}
