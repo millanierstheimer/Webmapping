@@ -1,0 +1,93 @@
+@font-face { /* Bindet eine eigene Schriftart in die Website ein. */
+    font-family: "Open Sans Condensed"; /* Legt den Namen der Schriftfamilie fest. */
+    src: url("fonts/OpenSans_Condensed-Regular.ttf") format("truetype"); /* Gibt den Speicherort der normalen Schriftdatei an. */
+    font-weight: 400; /* Legt die normale Schriftstärke fest. */
+}
+
+@font-face { /* Bindet die fette Variante der Schriftart ein. */
+    font-family: "Open Sans Condensed"; /* Verwendet denselben Namen der Schriftfamilie. */
+    src: url("fonts/OpenSans_Condensed-Bold.ttf") format("truetype"); /* Gibt den Speicherort der fetten Schriftdatei an. */
+    font-weight: 700; /* Legt die fette Schriftstärke fest. */
+}
+
+@font-face { /* Bindet die dünne Variante der Schriftart ein. */
+    font-family: "Open Sans Condensed"; /* Verwendet denselben Namen der Schriftfamilie. */
+    src: url("fonts/OpenSans_SemiCondensed-Light.ttf") format("truetype"); /* Gibt den Speicherort der dünnen Schriftdatei an. */
+    font-weight: 300; /* Legt die dünne Schriftstärke fest. */
+}
+
+body { /* Gestaltet den gesamten sichtbaren Bereich der Website. */
+    font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif; /* Legt die Schriftart fest; die anderen Schriftarten dienen als Ersatz. */
+    background-color: #c5b7f5; /* Legt die Hintergrundfarbe fest. */
+    color: #303943; /* Legt die allgemeine Textfarbe fest. */
+    margin: 0; /* Entfernt den standardmäßigen Außenabstand des Browsers. */
+    line-height: 1.6; /* Legt den Abstand zwischen den Textzeilen fest. */
+}
+
+h1 { /* Gestaltet alle Überschriften der ersten Ebene. */
+
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    text-align: center; /* Richtet die Überschrift mittig aus. */
+    font-weight: 700; /* Legt eine fette Schriftstärke fest. */
+    font-size: 58px; /* Legt die Schriftgröße auf 58 Pixel fest. */
+    margin-bottom: 0px; /* Entfernt den unteren Außenabstand. */
+    margin-top: 500px; /* Legt den oberen Außenabstand auf 500 Pixel fest. */
+}
+
+h2 { /* Gestaltet alle Überschriften der zweiten Ebene. */
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    margin-top: 30px; /* Legt den oberen Außenabstand fest. */
+    margin-bottom: 9px; /* Legt den unteren Außenabstand fest. */
+    border-bottom: 1px solid #263746; /* Fügt unter der Überschrift eine dünne Linie ein. */
+}
+
+p { /* Gestaltet alle Textabsätze. */
+    line-height: 1.5; /* Legt den Zeilenabstand fest. */
+    margin-top: 0px; /* Entfernt den oberen Außenabstand. */
+    margin-bottom: 10px; /* Legt den unteren Außenabstand fest. */
+}
+
+.bht-logo { /* Gestaltet das BHT-Logo. */
+    width: 200px; /* Legt die Breite des Logos fest. */
+    height: auto; /* Passt die Höhe automatisch an, damit die Proportionen erhalten bleiben. */
+    position: absolute; /* Positioniert das Logo unabhängig vom normalen Textfluss. */
+    top: 20px; /* Legt den Abstand zum oberen Rand fest. */
+    left: 25px; /* Legt den Abstand zum linken Rand fest. */
+}
+
+.hochschule { /* Gestaltet den Text mit der Klasse hochschule. */
+    text-align: center; /* Richtet den Text mittig aus. */
+    font-weight: 700; /* Stellt den Text fett dar. */
+    font-size: 16px; /* Legt die Schriftgröße fest. */
+    margin-top: -8px; /* Verschiebt den oberen Außenabstand um 8 Pixel nach oben. */
+    margin-bottom: 30px; /* Legt den unteren Außenabstand fest. */
+}
+
+main { /* Gestaltet den Hauptinhalt der Seite. */
+    padding: 10mm; /* Fügt innen einen Abstand von 10 Millimetern hinzu. */
+}
+
+footer { /* Gestaltet den Fußbereich der Seite. */
+    text-align: center; /* Richtet den Inhalt mittig aus. */
+    width: 100%; /* Nutzt die gesamte verfügbare Breite. */
+    margin-top: 40px; /* Fügt oberhalb des Fußbereichs einen Abstand hinzu. */
+}
+
+.kopfbereich h1 { /* Gestaltet die Hauptüberschrift speziell im Kopfbereich. */
+    margin-top: 100px; /* Legt den oberen Abstand der Überschrift auf 100 Pixel fest. */
+}
+
+/* Gestaltung der Links */
+
+main a { /* Gestaltet alle Links innerhalb des Hauptinhalts. */
+    color: #6652a3; /* Legt die Schriftfarbe fest. */
+    font-weight: 700; /* Stellt die Links fett dar. */
+    text-decoration: underline; /* Unterstreicht die Links. */
+    text-decoration-color: #6652a3; /* Legt die Farbe der Unterstreichung fest. */
+    text-underline-offset: 4px; /* Vergrößert den Abstand zwischen Text und Unterstreichung. */
+}
+
+main a:hover { /* Legt fest, wie Links beim Darüberfahren mit der Maus aussehen. */
+    color: white; /* Ändert die Schriftfarbe auf Weiß. */
+    text-decoration-color: white; /* Ändert auch die Farbe der Unterstreichung auf Weiß. */
+}

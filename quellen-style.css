@@ -1,0 +1,93 @@
+@font-face { /* Bindet eine eigene Schriftart in die Website ein. */
+    font-family: "Open Sans Condensed"; /* Legt den Namen der Schriftfamilie fest. */
+    src: url("fonts/OpenSans_Condensed-Regular.ttf") format("truetype"); /* Gibt den Speicherort der normalen Schriftdatei an. */
+    font-weight: 400; /* Legt die normale Schriftstärke fest. */
+}
+
+@font-face { /* Bindet die fette Variante der Schriftart ein. */
+    font-family: "Open Sans Condensed"; /* Verwendet denselben Namen der Schriftfamilie. */
+    src: url("fonts/OpenSans_Condensed-Bold.ttf") format("truetype"); /* Gibt den Speicherort der fetten Schriftdatei an. */
+    font-weight: 700; /* Legt die fette Schriftstärke fest. */
+}
+
+@font-face { /* Bindet die dünne Variante der Schriftart ein. */
+    font-family: "Open Sans Condensed"; /* Verwendet denselben Namen der Schriftfamilie. */
+    src: url("fonts/OpenSans_SemiCondensed-Light.ttf") format("truetype"); /* Gibt den Speicherort der dünnen Schriftdatei an. */
+    font-weight: 300; /* Legt die dünne Schriftstärke fest. */
+}
+
+/* Allgemeine Gestaltung */
+
+body { /* Gestaltet den gesamten sichtbaren Bereich der Website. */
+    font-family: "Open Sans Condensed", Arial, sans-serif; /* Legt die Schriftart fest; Arial und sans-serif dienen als Ersatzschriften. */
+    background-color: #c5b7f5; /* Legt die Hintergrundfarbe fest. */
+    color: #303943; /* Legt die allgemeine Textfarbe fest. */
+    margin: 0; /* Entfernt den standardmäßigen Außenabstand des Browsers. */
+    line-height: 1.6; /* Legt den Abstand zwischen den Textzeilen fest. */
+}
+
+/* Überschrift */
+
+.kopfbereich { /* Gestaltet den Kopfbereich der Quellen-Seite. */
+    text-align: center; /* Richtet den Inhalt mittig aus. */
+    padding: 40px 20px 10px; /* Fügt innen oben 40 Pixel, links und rechts 20 Pixel und unten 10 Pixel Abstand hinzu. */
+}
+
+.kopfbereich h1 { /* Gestaltet die Hauptüberschrift innerhalb des Kopfbereichs. */
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    font-size: 58px; /* Legt die Schriftgröße auf 58 Pixel fest. */
+    font-weight: 700; /* Stellt die Überschrift fett dar. */
+    margin: 0; /* Entfernt alle Außenabstände der Überschrift. */
+}
+
+.kopfbereich p { /* Gestaltet den Textabsatz innerhalb des Kopfbereichs. */
+    font-size: 16px; /* Legt die Schriftgröße fest. */
+    font-weight: 700; /* Stellt den Text fett dar. */
+    letter-spacing: 3px; /* Vergrößert den Abstand zwischen den Buchstaben. */
+    text-align: center; /* Richtet den Text mittig aus. */
+    margin-top: -8px; /* Fügt oberhalb des Textes einen Abstand von 10 Pixeln hinzu. */
+    margin-bottom: 30px; /* Fügt unterhalb des Textes einen Abstand von 30 Pixeln hinzu. */
+}
+
+
+/* Inhalt */
+
+main { /* Gestaltet den Hauptinhalt der Seite. */
+    padding: 10mm; /* Fügt innen einen Abstand von 10 Millimetern hinzu. */
+    max-width: 900px; /* Begrenzt die maximale Breite des Inhalts auf 900 Pixel. */
+    margin: auto; /* Zentriert den Hauptinhalt automatisch auf der Seite. */
+}
+
+h2 { /* Gestaltet alle Überschriften der zweiten Ebene. */
+    color: #263746; /* Legt die Schriftfarbe fest. */
+    margin-top: 30px; /* Legt den oberen Außenabstand fest. */
+    margin-bottom: 9px; /* Legt den unteren Außenabstand fest. */
+    border-bottom: 1px solid #263746; /* Fügt unter der Überschrift eine dünne Linie ein. */
+}
+
+main p { /* Gestaltet alle Textabsätze innerhalb des Hauptinhalts. */
+    font-size: 18px; /* Legt die Schriftgröße fest. */
+    font-weight: 300; /* Verwendet die dünne Schriftvariante. */
+    margin-top: 0; /* Entfernt den oberen Außenabstand. */
+    margin-bottom: 10px; /* Legt den unteren Außenabstand fest. */
+}
+
+main a { /* Gestaltet alle Links innerhalb des Hauptinhalts. */
+    color: #6652a3; /* Legt die Schriftfarbe fest. */
+    font-weight: 700; /* Stellt die Links fett dar. */
+    text-decoration: underline; /* Unterstreicht die Links. */
+    text-decoration-color: #6652a3; /* Legt die Farbe der Unterstreichung fest. */
+    text-underline-offset: 4px; /* Vergrößert den Abstand zwischen Text und Unterstreichung. */
+}
+
+main a:hover { /* Legt fest, wie Links beim Darüberfahren mit der Maus aussehen. */
+    color: white; /* Ändert die Schriftfarbe auf Weiß. */
+    text-decoration-color: white; /* Ändert die Farbe der Unterstreichung auf Weiß. */
+}
+
+
+/* Zurück-Link */
+
+.zurueck { /* Gestaltet den Absatz mit dem Zurück-Link. */
+    margin-top: 45px; /* Fügt oberhalb des Zurück-Links einen Abstand von 45 Pixeln hinzu. */
+}

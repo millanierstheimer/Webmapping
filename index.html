@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Gibt an, dass es sich um ein HTML5-Dokument handelt. -->
+
+<html lang="de"> <!-- Legt Deutsch als Sprache der Website fest. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tempelhofer Feld – Berlin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<body> <!-- Beginnt den sichtbaren Inhalt der Website. -->
+
+<header class="titelbereich"> <!-- Erstellt den Kopfbereich mit dem Titelbild und der Überschrift. -->
+
+    <img class="bht-logo" src="pics/BHT_Logo_kompakt_horizontal_Negativ_RGB_144ppi.png" alt="Logo der BHT"> <!-- Fügt das BHT-Logo ein. -->
+
+    <h1> <!-- Erstellt die Hauptüberschrift der Website. -->
+
+        <span class="lila-titel">TEMPELHOFER<br>FELD</span> <!-- Zeigt den ersten Teil der Überschrift an; br erzeugt einen Zeilenumbruch. -->
+
+        <span class="weisser-titel">BERLINS<br>GRÖSSTER<br>FREIRAUM</span> <!-- Zeigt den zweiten Teil der Überschrift an; br erzeugt Zeilenumbrüche. -->
+
+    </h1> <!-- Beendet die Hauptüberschrift. -->
+
+</header> <!-- Beendet den Kopfbereich. -->
+
+<main> <!-- Beginnt den Hauptinhalt der Website. -->
+
+    <section> <!-- Erstellt einen Abschnitt für die Karte. -->
+
+        <h2>Entdecke das Tempelhofer Feld</h2> <!-- Erstellt eine Überschrift für den Kartenabschnitt. -->
+
+        <p> <!-- Beginnt einen Textabsatz. -->
+            Entdecke das ehemalige Flughafengelände und seine heutige Nutzung
+            auf der interaktiven Karte.
+        </p> <!-- Beendet den Textabsatz. -->
+
+        <div id="karte"></div> <!-- Erstellt den Platzhalter, in den JavaScript die Leaflet-Karte einfügt. -->
+
+    </section> <!-- Beendet den Kartenabschnitt. -->
+
+    <section id="quellen"> <!-- Erstellt einen weiteren Abschnitt mit der ID quellen. -->
+
+    </section> <!-- Beendet den Quellenabschnitt. -->
+
+</main> <!-- Beendet den Hauptinhalt der Website. -->
+
+<footer> <!-- Beginnt den Fußbereich der Website. -->
+
+    <a href="impressum.html">IMPRESSUM</a> <!-- Verlinkt auf die Impressum-Seite. -->
+
+    <a href="quellen.html">QUELLEN</a> <!-- Verlinkt auf die Quellen-Seite. -->
+
+    <a href="datenschutz.html">DATENSCHUTZ</a> <!-- Verlinkt auf die Datenschutz-Seite. -->
+
+</footer> <!-- Beendet den Fußbereich. -->
+
+
+<script src="script.js"></script> <!-- Bindet die eigene JavaScript-Datei für die interaktive Karte ein. -->
+
+</body> <!-- Beendet den sichtbaren Inhalt. -->
+
+</html> <!-- Beendet das HTML-Dokument. -->
