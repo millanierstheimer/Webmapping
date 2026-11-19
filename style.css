@@ -86,7 +86,7 @@ footer { /* Gestaltet den Fußbereich der Website. */
 .titelbereich { /* Gestaltet den großen Kopfbereich mit dem Hintergrundbild. */
     width: 100%; /* Nutzt die gesamte Bildschirmbreite. */
     min-height: 650px; /* Legt eine Mindesthöhe von 650 Pixeln fest. */
-    background-image: url("pics/tempelhofer_feld.jpeg"); /* Legt das Hintergrundbild fest. */
+    background-image: url("pics/Tempelhofer_feld.jpeg"); /* Legt das Hintergrundbild fest. */
     background-size: cover; /* Skaliert das Bild so, dass der gesamte Bereich ausgefüllt wird. */
     background-position: center; /* Zentriert das Hintergrundbild. */
     background-repeat: no-repeat; /* Verhindert, dass sich das Hintergrundbild wiederholt. */
